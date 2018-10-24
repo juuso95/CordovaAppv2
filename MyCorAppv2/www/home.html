@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="mobileui/style.css">
+    <meta name="format-detection" content="telephone=no">
+    <meta charset="utf-8">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1,
+minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <title>Juuso's app</title>
+</head>
+<body class="padding white-50 has-header has-sub-header">
+    <div class="header blue">
+        <div class="left">
+            <div id="mySidenav" class="sidenav">
+                <p style="margin-top: -75px; font-size: xx-large; margin-bottom: 0px; padding: 30px;">Menu</p>
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#">Welcome</a>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contacts</a>
+            </div>
+
+        </div>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        <h1>Juuso's app</h1>
+        <div class="right">
+            <button id="logoutButton" class="icon ion-log-out"></button>
+
+        </div>
+    </div>
+    <div class="blue sub shadow tab">
+        <button class="icon ion-android-person active"
+                onclick="openTab('tabWelcome')">
+            Welcome
+        </button>
+        <button class="icon ion-android-list"
+                onclick="openTab('tabHome')">
+            Home
+        </button>
+        <button class="icon ion-android-chat"
+                onclick="openTab('tabAbout')">
+            About
+        </button>
+        <button class="icon ion-android-people"
+                onclick="openTab('tabContacts')">
+            Contacts
+        </button>
+    </div>
+    <div class="tab-content active" id="tabWelcome">
+        <h2 class="text-strong padding text-blue">Welcome to my application!</h2>
+        <p>In here you can check some information about me and my knowledge, and of course to wonder this beautifull app! </p>
+        
+
+    </div>
+    <div class="tab-content" id="tabHome">
+        <h2 class="text-strong padding text-blue">Home of my application!</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum.
+        </p>
+    </div>
+    <div class="tab-content" id="tabAbout">
+        <h2 class="text-strong padding text-blue">Here is something about me!</h2>
+        <p></p>
+        <p>
+            My name is Juuso Kivistö and i'm 22 years old student from Finland, Vantaa.
+            I am currently studying information technology in Laurea University of Applied and Sciences. I've studied almost two years and my plan is to continue to study about one and half years untill i graduate.
+            During my studies i've developed two websites by using HTML and CSS. I have also created one software by usin Java and SQL. Currently im working an mobile app for android and ios, and i hope to learn as much as possible about Ionic, Cardova and Angular to get my knowledge to proper level about these subjects.
+            My greatest passion amogst football is computers and technology inside of those devices. I have used computers since i was a child, and my passion for computing is only growing every day.
+        </p>
+    </div>
+    <div class="tab-content" id="tabContacts">
+        <h2 class="text-strong padding text-blue">Here is all the contact information!</h2>
+        
+        <p> Student number: 1701442</p>
+        <p> Email: juuso.j.kivisto@student.laurea.fi</p>
+
+    </div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="mobileui/mobileui.js"></script>
+    <script type="text/javascript" src="js/home.js"></script>
+</body>
+</html>
